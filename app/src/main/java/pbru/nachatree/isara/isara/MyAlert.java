@@ -15,10 +15,9 @@ public class MyAlert {
 
 
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setIcon(R.drawable.c);
+        builder.setIcon(R.drawable.danger);
         builder.setTitle(strTitle);
         builder.setMessage(strMessage);
-
         builder.setCancelable(false);
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override

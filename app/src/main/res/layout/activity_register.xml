@@ -6,84 +6,114 @@
     android:layout_height="match_parent"
     tools:context="pbru.nachatree.isara.isara.RegisterActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/tumblr_nco6p7uz0t1txcb93o1_500"
-        android:orientation="vertical">
+        android:background="@drawable/abc">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:background="@android:color/holo_blue_bright"
+            android:background="@android:color/darker_gray"
             android:gravity="center"
             android:text="Rsgister"
             android:textColor="@android:color/black"
             android:textSize="@dimen/h2"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editText3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:ems="10"
-            android:hint="Name"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/editText4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/editText3"
-            android:layout_below="@+id/editText3"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="numberPassword" />
-
-        <EditText
-            android:id="@+id/editText5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/editText3"
-            android:layout_below="@+id/editText4"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:ems="10"
-            android:hint="E-mail"
-            android:inputType="textEmailAddress" />
-
-        <EditText
-            android:id="@+id/editText6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/editText5"
-            android:layout_below="@+id/editText5"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:ems="10"
-            android:hint="Phone"
-            android:inputType="phone" />
-
         <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center"
-            android:layout_margin="30dp"
-            android:text="OK"
-            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:onClick="clicklSingUp"
+            android:text="Sing up"
             android:textSize="@dimen/h1"
             android:textStyle="bold" />
-    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/button3"
+            android:layout_below="@+id/textView"
+            android:layout_margin="10dp"
+            android:background="#96ede8e8"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editText3"
+                android:layout_below="@+id/editText3"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="numberPassword" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editText3"
+                android:layout_below="@+id/editText4"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editText5"
+                android:layout_below="@+id/editText5"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Phone"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:text="Clear"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

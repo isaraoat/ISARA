@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/abc">
+        android:background="@drawable/tumblr_nco6p7uz0t1txcb93o1_500">
 
         <Button
             android:id="@+id/button"
@@ -19,7 +19,8 @@
             android:layout_alignParentEnd="false"
             android:layout_centerHorizontal="true"
             android:layout_weight="1"
-            android:text="SING UP"
+            android:onClick="clickSingUp"
+            android:text="Sing up"
             android:textSize="@dimen/h1"
             android:textStyle="bold" />
 
@@ -33,7 +34,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/icon1"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/c" />
+                android:layout_margin="20dp"
+                app:srcCompat="@drawable/monkey" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -43,56 +45,36 @@
                 android:background="#c8ede9e9"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <EditText
+                    android:id="@+id/editText"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:ems="10"
+                    android:hint="Username"
+                    android:inputType="textPersonName" />
 
-                    <EditText
-                        android:id="@+id/editText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/imageView"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="32dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="Name"
-                        android:inputType="textPersonName" />
-
-                </LinearLayout>
-
-                <LinearLayout
+                <EditText
+                    android:id="@+id/editText2"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <EditText
-                        android:id="@+id/editText2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/editText"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="41dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="Password"
-                        android:inputType="numberPassword"
-                        android:onClick="clickLogin" />
-                </LinearLayout>
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="numberPassword" />
 
                 <Button
                     android:id="@+id/button4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center"
+                    android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:text="SING IN" />
+                    android:onClick="clickSingIn"
+                    android:text="Sing in"
+                    android:textSize="@dimen/h1" />
 
             </LinearLayout>
 

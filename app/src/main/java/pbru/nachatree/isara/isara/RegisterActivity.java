@@ -8,9 +8,17 @@ import android.widget.EditText;
 public class RegisterActivity extends AppCompatActivity {
 
     //Explicit
-    private EditText nameEditText,passwordEditText,phoneEditText, emailEditText;
+    private EditText nameEditText,
+            usernameEditText,
+            passwordEditText,
+            phoneEditText,
+            emailEditText;
 
-    private String nameString,passwordString,phoneString, emailString;
+    private String nameString,
+            usernameString,
+            passwordString,
+            phoneString,
+            emailString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +34,10 @@ public class RegisterActivity extends AppCompatActivity {
     }//Main Class
 
 
-    public void cliclSingUp(View view) {
+    public void clicklSingUp(View view) {
 
         nameString = nameEditText.getText().toString().trim();
+        usernameString = usernameEditText.getText().toString().trim();
         passwordString = passwordEditText.getText().toString().trim();
         emailString = emailEditText.getText().toString().trim();
         phoneString = phoneEditText.getText().toString().trim();
@@ -37,7 +46,7 @@ public class RegisterActivity extends AppCompatActivity {
         if (checkSpace()) {
             //Have Space
             MyAlert myAlert = new MyAlert();
-            myAlert.myDialog(this,"มีช่องว่าง" ,"กรุณากรอกข้อมูลให้ครบ");
+            myAlert.myDialog(this,"มีช่องว่าง" ,"กรุณากรอกข้อมูลให้ครบทุกช่อง");
         } else {
             //No space
 
@@ -49,6 +58,7 @@ public class RegisterActivity extends AppCompatActivity {
     private boolean checkSpace() {
 
         return nameString.equals("")||
+                usernameString.equals("")||
                 passwordString.equals("")||
                 emailString.equals("")||
                 phoneString.equals("");
@@ -59,6 +69,7 @@ public class RegisterActivity extends AppCompatActivity {
     private void bindWindget() {
 
         nameEditText = findViewById(R.id.editText3);
+        usernameEditText = findViewById(R.id.editText7);
         passwordEditText = findViewById(R.id.editText4);
         emailEditText = findViewById(R.id.editText5);
         phoneEditText = findViewById(R.id.editText6);

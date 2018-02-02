@@ -13,14 +13,13 @@ public class MainLoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_login);
     }
 
-    public void clickSingIn(View view) {
+    public void clickSingUp(View view) {
         startActivity(new Intent(MainLoginActivity.this, RegisterActivity.class));
 
     }
 
-    public void clickSingUp(View view) {
-
-        startActivity(new Intent(MainLoginActivity.this, MainLoginActivity.class));
+    public void clickSingIn (View view) {
+        startActivity(new Intent(MainLoginActivity.this, MainActivity.class));
 
     }
 
